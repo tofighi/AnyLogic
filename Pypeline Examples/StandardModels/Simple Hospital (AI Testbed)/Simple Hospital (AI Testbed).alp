@@ -636,12 +636,19 @@ else
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[pythonCommandType]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[self.PYTHON_PATH]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[pythonCommand]]></Name>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[pythonExecPath]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[// e.g., "C:\\anaconda3\\envs\\MyEnv\\python.exe"
+"/opt/homebrew/bin/python3"]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[redirectPyOutput]]></Name>
