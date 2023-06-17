@@ -61,6 +61,7 @@ def train_pipeline(layers, nodes_per_layer):
 
     cb = EarlyStopping(monitor='loss', patience=10, min_delta=0.005)
 
+    verbose = False
     _ = model.fit(*trains,
                   batch_size=32,
                   epochs=500,
@@ -85,4 +86,4 @@ if __name__ == "__main__":
     model, score = train_pipeline(1, 8)
     print("Score:", score)
 
-    save_to_onnx(model, "..\iris.onnx")
+    save_to_onnx(model, "iris.onnx")
